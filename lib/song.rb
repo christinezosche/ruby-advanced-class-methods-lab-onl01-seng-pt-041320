@@ -50,7 +50,7 @@ class Song
   def self.new_from_filename(filename)
       data = filename.split(" - ")
       artist_name = data[0]
-      name = data[1]
+      name = data[1].delete_suffix(".mp3")
  
       song = self.new
       person.name = name
