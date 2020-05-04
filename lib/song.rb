@@ -53,10 +53,9 @@ class Song
       name = data[1].delete_suffix(".mp3")
  
       song = self.new
-      person.name = name
-      person.age = age
-      person.company = company
-      person
+      song.name = name
+      song.artist_name = artist_name
+      song
   
   end
     
