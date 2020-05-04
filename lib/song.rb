@@ -59,7 +59,7 @@ class Song
   end
     
   def self.create_from_filename(filename)
-    data = filename.split(" - ")
+      data = filename.split(" - ")
       artist_name = data[0]
       name = data[1].delete_suffix(".mp3")
  
