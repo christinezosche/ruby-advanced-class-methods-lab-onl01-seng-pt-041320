@@ -48,13 +48,11 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    song = 
-    data = filename.split(" - ")
-      name = data[0]
-      age = data[1]
-      company = data[2]
+      data = filename.split(" - ")
+      artist_name = data[0]
+      name = data[1]
  
-      person = self.new # This is an important line.
+      song = self.new
       person.name = name
       person.age = age
       person.company = company
